@@ -13,7 +13,8 @@ namespace LinkedListDemo
                 "\nChoose 2) : Creating a linked list \n "
                 + "\nChoose 3) : Creating a linked list \n " +
                 "\nChoose 4) : Inserted a linked list \n " +
-                "\nChoose 5) : Delete a Data from linked list \n ");
+                "\nChoose 5) : Delete First Node from linked list \n " +
+                "\nChoose 6) : Delete Last Node from linked list \n ");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -49,13 +50,21 @@ namespace LinkedListDemo
                     break;
                 case 5:
                     linkedList = new LinkedList();
-                    linkedList.AddFirst(70);
-                    linkedList.AddFirst( 30);
                     linkedList.AddFirst(56);
-                    linkedList.RemoveFirst(70);
+                    linkedList.AddFirst( 30);
+                    linkedList.AddFirst(70);
+                    linkedList.RemoveFirst(56);
                     linkedList.Display();
-
+                        break;
+                case 6:
+                   linkedList = new LinkedList();
+                    linkedList.AddFirst(56);
+                    linkedList.AddFirst( 30);
+                    linkedList.AddFirst(70);
+                    linkedList.RemoveLast(70);
+                    linkedList.Display();
                     break;
+
 
                 default:
                     Console.WriteLine("Choose a Valid Option");
