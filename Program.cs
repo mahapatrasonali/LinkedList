@@ -16,7 +16,8 @@ namespace LinkedListDemo
                 "\nChoose 5) : Delete First Node from linked list \n " +
                 "\nChoose 6) : Delete Last Node from linked list \n " +
                 "\nChoose 7) : Search  Node from linked list \n " +
-                "\nChoose 8): To Insert An Element After in a linked list \n");
+                "\nChoose 8): To Insert An Element After in a linked list \n" +
+               "\nChoose 9): To Delete An Element After in a linked list \n");
                 
             int option = Convert.ToInt32(Console.ReadLine());
 
@@ -81,6 +82,15 @@ namespace LinkedListDemo
                     linkedList.AddFirst(30);
                     linkedList.AddFirst(70);
                     linkedList.InsertAfter(30,40);
+                    linkedList.Display();
+                    break;
+                case 9:
+                    linkedList = new LinkedList();
+                    linkedList.AddFirst(56);
+                    linkedList.AddFirst(30);
+                    linkedList.AddFirst(40);
+                    linkedList.AddFirst(70);
+                    linkedList.DeleteFromMiddle(40);
                     linkedList.Display();
                     break;
 
