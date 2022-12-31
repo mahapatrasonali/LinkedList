@@ -70,6 +70,15 @@ namespace LinkedListDemo
             head = node3;
             Console.WriteLine($"First node {SearchNode} has been searched.",node3.data);
         }
+        public void InsertAfter( int InsertAfter,int data)
+        { 
+            int InsertNode = head.data;
+            Node node4 = new Node(data);
+            node4.next =head.next;
+            
+            head = node4;
+            Console.WriteLine($"{node4.data} insertion done after {data}.");
+        }
              
            
          
