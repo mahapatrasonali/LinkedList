@@ -79,6 +79,14 @@ namespace LinkedListDemo
             head = node4;
             Console.WriteLine($"{node4.data} insertion done after {data}.");
         }
+        public void DeleteFromMiddle(int data)
+        {
+            int deleteFromMiddleNode = head.data;
+            Node node5 = new Node(data);
+            node5.next =head;
+            head = node5;
+            Console.WriteLine($" {node5} has been deleted.");
+        }
              
            
          
