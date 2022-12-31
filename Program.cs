@@ -11,7 +11,8 @@ namespace LinkedListDemo
             Console.WriteLine("Choose a option from below\n" +
                 "Choose 1): Creating a linked list \n " +
                 "\nChoose 2) : Creating a linked list \n "
-                + "\nChoose 3) : Creating a linked list \n ");
+                + "\nChoose 3) : Creating a linked list \n " +
+                "\nChoose 4) : Inserted a linked list \n ");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -38,6 +39,12 @@ namespace LinkedListDemo
                     linkedList.AppendFirst(70);
                     linkedList.Display();
                     break;
+                case 4:
+                    linkedList = new LinkedList();
+                    linkedList.AddFirst(56);
+                    linkedList.InsertAdd(1, 30);
+                    linkedList.AddFirst(70);
+                     break;
 
                 default:
                     Console.WriteLine("Choose a Valid Option");
