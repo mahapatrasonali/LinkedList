@@ -50,7 +50,7 @@ namespace LinkedListDemo
             head = node2;
             Console.WriteLine("{0} inserted into linked list ", node2.data);
         }
-        public void RemoveFirst( int data)
+        public void RemoveFirst(int data)
         {
             int deletedNode = head.data;
             head = head.next;
@@ -62,6 +62,20 @@ namespace LinkedListDemo
             head = head.next;
             Console.WriteLine($"Last node {deletedNode} has been removed.");
         }
+        public void SearchNode(int data)
+        {
+            int searchNode = head.data;
+            Node node3 = new Node(data);
+            node3.next = head;
+            head = node3;
+            Console.WriteLine($"First node {SearchNode} has been searched.",node3.data);
+        }
+             
+           
+         
+
+
+
         public void Display()
         {
             Node temp = this.head;
