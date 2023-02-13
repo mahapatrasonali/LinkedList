@@ -36,6 +36,13 @@ namespace LinkedListDemo
             head = newnode;
             Console.WriteLine("{0} added into linked list", newnode.data);
         }
+        public void AppendFirst(int data)
+        {
+            Node node1 = new Node(data);
+            node1.next = head;
+            head = node1;
+            Console.WriteLine("{0} appended into linked list", node1.data);
+        }
         public void Display()
         {
             Node temp = this.head;
